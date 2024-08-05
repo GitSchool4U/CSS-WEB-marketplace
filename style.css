@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #dcdcdc;
+  padding: 0 1rem;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: auto;
+}
+
+header nav .links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header nav .links .logo {
+  color: #0197fe;
+  font-weight: bolder;
+}
+
+header nav .links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+header nav .btns {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+header nav .btns a {
+  text-decoration: none;
+}
+
+header nav .btns button {
+  background-color: #0197fe;
+  color: white;
+  border: none;
+  height: 80%;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+
+@media (max-width:920px) {
+  header nav .links a {
+    display: none;
+  }
+}
+
+/* visibitliy */
+
+.visibility {
+  max-width: 35rem;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+.visibility h2 {
+  margin-bottom: 1rem;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.visibility h2 > span {
+  color: #0197fe;
+  font-weight: normal;
+  font-family: cursive;
+}
+
+.visibility p {
+  color: rgba(0, 0, 0, 0.686);
+}
+
+/* truckload */
+.truckload {
+  height: 100%;
+  width: 100%;
+}
+
+.truckload .wrapper {
+  max-width: 80rem;
+  height: fit-content;
+  margin: auto;
+  background-color: #f0f0f0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 10px;
+}
+
+.truckload .chotu-nav {
+  width: 100%;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #dcdcdc;
+  border-radius: 50px;
+  position: relative;
+}
+
+.truckload .chotu-nav .slider {
+  background-color: #f1ad03;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 33.33%;
+  border-radius: 50px;
+}
+
+.truckload .chotu-nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1;
+}
+
+.truckload .chotu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.truckload .chotu-container h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.936);
+}
+
+.truckload .chotu-container > p {
+  font-size: 40px;
+  font-family: cursive;
+  color: rgba(0, 0, 0, 0.821);
+}
+
+.truckload .chotu-container  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+    gap: 3rem;
+    background-color: #DCDCDC;
+    border-radius: 10px;
+}
+
+.truckload .chotu-container  .grid .grid-items{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.truckload .chotu-container  .grid .grid-items img{
+    background-color: black;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.truckload .chotu-container  .grid2{
+    background-color: transparent;
+}
+
+.truckload .chotu-container  .grid2 .grid-items img{
+    background-color: #0197fe;
+}
+
+
+.truckload .chotu-container button{
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.661);
+    width: fit-content;
+    padding: 14px 22px;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+.truckload .marketplace{
+    max-width: 80rem;
+    margin: auto;
+    width: 100%;
+    height:  40rem;
+    position: relative;
+    color: white;
+}
+
+.truckload .marketplace img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.truckload .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.truckload .overlay img{
+    width: 2rem;
+}
+
+
+.truckload .overlay .wrapper{
+    max-width: 30rem;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.truckload .overlay .wrapper .image{
+    background-color: #0197fe;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.truckload .overlay .wrapper .image img{
+    width: 4rem;
+}
+
+.truckload .overlay .wrapper button{
+    background-color: #0197fe;
+    color: white;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+
+@media (max-width:585px) {
+  .truckload .chotu-container  .grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .truckload .wrapper{
+    padding: 22px 1rem;
+  }
+  .truckload .chotu-container{
+    padding: 1rem 0;
+  }
+}
